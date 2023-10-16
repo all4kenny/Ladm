@@ -1,0 +1,15 @@
+---
+- name: Skill playbook practice
+  hosts: Ulfkhart
+  tasks:
+    - name: Installing cmatrix
+      become: yes
+      apt: pkg=cmatrix state=latest
+
+    - name: Installing cowsay
+      become: yes
+      apt: pkg=cowsay state=latest
+
+    - name: Installing sl
+      become: yes
+      apt: pkg=sl state=latest
